@@ -174,14 +174,28 @@ jobs:
         ${{ inputs.test_config_dir }}/${{ inputs.accelerator }}-${{ inputs.intent }}${{
           inputs.deployer != 'helmfile' && format('-{0}', inputs.deployer) || ''
         }}-config.yaml
-      # v0.5.1 — GPU-conditional worker taints (non-GPU worker pools stay
-      # untainted) + native GB300 (p6e-gb300/p6e-gb300r) EFA layout, on top of the
-      # node-group taint schema introduced in v0.4.27 (GPU pool carries
-      # skyhook.nvidia.com=runtime-required:NoSchedule until NodeWrite finishes
-      # tuning + reboot). Earlier v0.4.x pins predate taint support; v0.2.6 read
-      # .compute.nodeGroups.* directly and failed Terraform parse with
-      # "object with 1 attribute eks".
-      EKS_IMAGE: "ghcr.io/mchmarny/cluster/eks@sha256:91762c28d63c6f47774e86a922b84596a8daed031b225b9e7a25bd4910829f9b"
+      # v0.5.2 — adds deployment.stateLocation (mchmarny/cluster#51), which
+      # decouples the S3 backend region from the provider region. The GB300
+      # lane needs it: the state bucket is named per-account and so exists in
+      # one region only (us-east-1), while that lane provisions into
+      # us-east-2, and before this the backend region was derived from
+      # .deployment.location and init was answered with an S3 301 (#3162).
+      #
+      # Carried forward from v0.5.1: GPU-conditional worker taints (non-GPU
+      # worker pools stay untainted) + native GB300 (p6e-gb300/p6e-gb300r) EFA
+      # layout, on top of the node-group taint schema introduced in v0.4.27
+      # (GPU pool carries skyhook.nvidia.com=runtime-required:NoSchedule until
+      # NodeWrite finishes tuning + reboot). Earlier v0.4.x pins predate taint
+      # support; v0.2.6 read .compute.nodeGroups.* directly and failed
+      # Terraform parse with "object with 1 attribute eks".
+      #
+      # The rest of the v0.5.1..v0.5.2 delta does not reach EKS, so the ct and
+      # gb200 lanes see only the above: the Terraform provider bump touched
+      # provider/gke alone, and the remaining commits are GKE compute plus a
+      # CDPATH guard in the provider tools. The actuator still exposes no
+      # `destroy` verb, so teardown below continues to run `apply` against a
+      # destroy-flagged config.
+      EKS_IMAGE: "ghcr.io/mchmarny/cluster/eks@sha256:29bdee6575146aa60b016860501ef07f8e6fbe7f545a9373a0502c1493e06480"
       VALIDATOR_IMAGE_PREFIX: "ghcr.io/nvidia/aicr-validators"
       VALIDATOR_TAG: "uat-${{ github.run_id }}"
       # Target platform(s) for the main-cell image builds (snapshot-agent + the

@@ -38,11 +38,12 @@
 # Its Terraform state bucket does NOT carry over unchanged. cluster-state-* is
 # named per-account, so one account gets one bucket in one region, and this
 # account's is in us-east-1 where the ct and gb200 lanes created it. GB300 is
-# the first us-east-2 lane, and the actuator derives the backend region from
-# .deployment.location, so terraform init is answered with an S3 301 (#3162).
-# Two changes clear it, neither landed here: EKS_IMAGE in uat-aws.yaml bumped
-# to a release carrying mchmarny/cluster#51, and stateLocation: us-east-1
-# added below. Until both, this lane cannot provision.
+# the first us-east-2 lane, so the backend region and the provider region have
+# to differ here, which the actuator could not express until
+# mchmarny/cluster#51 added deployment.stateLocation; deriving the backend
+# region from .deployment.location answered init with an S3 301 (#3162). Both
+# halves are now in place: EKS_IMAGE is pinned to v0.5.2, which carries that
+# change, and stateLocation is set below.
 
 apiVersion: github.com/mchmarny/cluster/v1alpha1
 kind: Cluster
@@ -57,6 +58,14 @@ deployment:
   tenancy: "897722687756"
   location: us-east-2
   state: tenancy                # remote TF state in this account's S3
+  # The bucket behind `state: tenancy` is named cluster-state-<tenancy>, so
+  # the account has exactly one and it is in us-east-1, where the ct and
+  # gb200 lanes bootstrapped it. This is the first us-east-2 AWS lane, so
+  # without this the backend region would follow `location` and S3 would
+  # answer terraform init with a 301 (#3162). Read only by actuators carrying
+  # mchmarny/cluster#51 (v0.5.2+); earlier images drop the key silently, since
+  # the schema is an editor hint rather than a runtime gate.
+  stateLocation: us-east-1
   destroy: false
   tags:
     env: dev

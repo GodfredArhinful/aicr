@@ -177,8 +177,8 @@ reservations:
   # identity prerequisites from the earlier GB200 bring-up: the GitHub OIDC
   # provider and github-actions-role-aicr. Its Terraform state bucket does
   # not carry over: it is in us-east-1 and this is the first us-east-2 lane,
-  # so the lane cannot provision until the actuator image is bumped and the
-  # cluster config sets stateLocation (#3162, see the note there).
+  # so the cluster config pins the backend region with stateLocation and the
+  # actuator is pinned to a release that reads it (#3162, see the note there).
   #
   # gpu-count is 4 because a p6e-gb300r.36xlarge carries 4 B300
   # (describe-instance-types: GpuInfo B300 x 4, arm64, EFA-capable). The

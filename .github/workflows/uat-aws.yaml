@@ -174,12 +174,14 @@ jobs:
         ${{ inputs.test_config_dir }}/${{ inputs.accelerator }}-${{ inputs.intent }}${{
           inputs.deployer != 'helmfile' && format('-{0}', inputs.deployer) || ''
         }}-config.yaml
-      # v0.5.2 — adds deployment.stateLocation (mchmarny/cluster#51), which
-      # decouples the S3 backend region from the provider region. The GB300
-      # lane needs it: the state bucket is named per-account and so exists in
-      # one region only (us-east-1), while that lane provisions into
-      # us-east-2, and before this the backend region was derived from
-      # .deployment.location and init was answered with an S3 301 (#3162).
+      # v0.5.3 — carries deployment.stateLocation (mchmarny/cluster#51, first
+      # released in v0.5.2), which decouples the S3 backend region from the
+      # provider region. The GB300 lane needs it: the state bucket is named
+      # per-account and so exists in one region only (us-east-1), while that
+      # lane provisions into us-east-2, and before this the backend region was
+      # derived from .deployment.location and init was answered with an S3 301
+      # (#3162). v0.5.3 itself adds only image hardening (upstream #53: base
+      # image, kubectl and kubelogin bumps, VEX statements).
       #
       # Carried forward from v0.5.1: GPU-conditional worker taints (non-GPU
       # worker pools stay untainted) + native GB300 (p6e-gb300/p6e-gb300r) EFA
@@ -189,13 +191,16 @@ jobs:
       # support; v0.2.6 read .compute.nodeGroups.* directly and failed
       # Terraform parse with "object with 1 attribute eks".
       #
-      # The rest of the v0.5.1..v0.5.2 delta does not reach EKS, so the ct and
+      # The rest of the v0.5.1..v0.5.3 delta does not reach EKS, so the ct and
       # gb200 lanes see only the above: the Terraform provider bump touched
       # provider/gke alone, and the remaining commits are GKE compute plus a
       # CDPATH guard in the provider tools. The actuator still exposes no
       # `destroy` verb, so teardown below continues to run `apply` against a
       # destroy-flagged config.
-      EKS_IMAGE: "ghcr.io/mchmarny/cluster/eks@sha256:29bdee6575146aa60b016860501ef07f8e6fbe7f545a9373a0502c1493e06480"
+      #
+      # Tag carried alongside the digest so the version is legible here; the
+      # digest is what pins. Same form as the GKE pin in uat-gcp.yaml.
+      EKS_IMAGE: "ghcr.io/mchmarny/cluster/eks:v0.5.3@sha256:ff1a04bedf1aa4b30e316404a69a60068b269c6bba3a9d09231f68a69b7898b6"
       VALIDATOR_IMAGE_PREFIX: "ghcr.io/nvidia/aicr-validators"
       VALIDATOR_TAG: "uat-${{ github.run_id }}"
       # Target platform(s) for the main-cell image builds (snapshot-agent + the

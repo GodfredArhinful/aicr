@@ -160,10 +160,15 @@ jobs:
       # DC2 selects the AICRConfig by intent; both intents drive the same
       # cluster-config (GPU pool from the reservation, system/CPU pools dynamic).
       TEST_CONFIG: ${{ inputs.test_config_dir }}/h100-${{ inputs.intent }}-config.yaml
-      # v0.5.17. Keep the release tag for update visibility and the digest for
+      # v0.5.19. Keep the release tag for update visibility and the digest for
       # execution identity. Review the upstream release and verify its signature
       # before rotating both values; never use a tag-only actuator reference.
-      GKE_ACTUATOR_IMAGE: "ghcr.io/mchmarny/cluster/gke:v0.5.17@sha256:8bfffd412d98276ee1000a6c083514e6b28928416cc37602ec637ed3a2167c99"
+      #
+      # The v0.5.17..v0.5.19 delta reaches GKE provisioning, unlike most
+      # actuator bumps: upstream #52 reworked provider/gke/terraform/compute.tf
+      # (a3-megagpu-8g gVNIC guard, host maintenance interval) and moved the
+      # google provider pin. #53 is image hardening only.
+      GKE_ACTUATOR_IMAGE: "ghcr.io/mchmarny/cluster/gke:v0.5.19@sha256:30361419e520a9eae26e1d242563999cc96b29dab6c3a4f7d7bc630bde64f682"
       VALIDATOR_IMAGE_PREFIX: "ghcr.io/nvidia/aicr-validators"
       VALIDATOR_TAG: "uat-${{ github.run_id }}"
       # Pin validator-image resolution for MAIN cells to this run's freshly

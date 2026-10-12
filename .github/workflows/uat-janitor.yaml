@@ -112,7 +112,7 @@ jobs:
     env:
       GCP_PROJECT_ID: "eidosx"
       JANITOR_CONFIG: "tests/uat/gcp/cluster-config.yaml"
-      JANITOR_ACTUATOR_IMAGE: "ghcr.io/mchmarny/cluster/gke:v0.5.19@sha256:30361419e520a9eae26e1d242563999cc96b29dab6c3a4f7d7bc630bde64f682"
+      JANITOR_ACTUATOR_IMAGE: "ghcr.io/mchmarny/cluster/gke:v0.5.17@sha256:8bfffd412d98276ee1000a6c083514e6b28928416cc37602ec637ed3a2167c99"
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

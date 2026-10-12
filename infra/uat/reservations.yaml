@@ -173,9 +173,12 @@ reservations:
   #
   # The reservation is RAM-shared into 897722687756 — the account named by
   # .deployment.tenancy in cluster-config-path below, which is the single
-  # source of truth for where a run provisions. That account already carries
-  # every prerequisite from the earlier GB200 bring-up: the GitHub OIDC
-  # provider, github-actions-role-aicr, and its Terraform state bucket.
+  # source of truth for where a run provisions. That account carries the
+  # identity prerequisites from the earlier GB200 bring-up: the GitHub OIDC
+  # provider and github-actions-role-aicr. Its Terraform state bucket does
+  # not carry over: it is in us-east-1 and this is the first us-east-2 lane,
+  # so the lane cannot provision until the actuator image is bumped and the
+  # cluster config sets stateLocation (#3162, see the note there).
   #
   # gpu-count is 4 because a p6e-gb300r.36xlarge carries 4 B300
   # (describe-instance-types: GpuInfo B300 x 4, arm64, EFA-capable). The

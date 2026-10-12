@@ -32,9 +32,17 @@
 #      which names the field the launch template is missing rather than the
 #      reservation it cannot match.
 #
-# The account is the same as GB200's and already carries every prerequisite
-# from that bring-up: the GitHub OIDC provider, github-actions-role-aicr, and
-# the cluster-state-897722687756 Terraform state bucket. No infra work needed.
+# The account is the same as GB200's and carries the identity prerequisites
+# from that bring-up: the GitHub OIDC provider and github-actions-role-aicr.
+#
+# Its Terraform state bucket does NOT carry over unchanged. cluster-state-* is
+# named per-account, so one account gets one bucket in one region, and this
+# account's is in us-east-1 where the ct and gb200 lanes created it. GB300 is
+# the first us-east-2 lane, and the actuator derives the backend region from
+# .deployment.location, so terraform init is answered with an S3 301 (#3162).
+# Two changes clear it, neither landed here: EKS_IMAGE in uat-aws.yaml bumped
+# to a release carrying mchmarny/cluster#51, and stateLocation: us-east-1
+# added below. Until both, this lane cannot provision.
 
 apiVersion: github.com/mchmarny/cluster/v1alpha1
 kind: Cluster

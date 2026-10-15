@@ -36,10 +36,10 @@ type creCombination struct {
 // accelerator, so qualifying a new combination is an entry here plus a measured
 // threshold in the recipe, never a new code path.
 //
-// nccl-cre-all-reduce-bw is qualified on eks x h100. It was re-measured on the
-// CRE version the registry pins, v0.6.0, on 2026-10-09 against 2x p5.48xlarge:
-// 489.51 GB/s bus bandwidth, against 489.80 GB/s at the original 2026-09-02
-// qualification on v0.1.0.
+// nccl-cre-all-reduce-bw is qualified on eks x h100. It was last re-measured on
+// CRE v0.6.0, on 2026-10-09 against 2x p5.48xlarge: 489.51 GB/s bus bandwidth,
+// against 489.80 GB/s at the original 2026-09-02 qualification on v0.1.0. It
+// has not been re-measured on v0.7.0.
 //
 // cre-training-goodput is qualified on eks x h100 with training/nemotron5-8b,
 // measured on 2026-10-15 against 2x p5.48xlarge on a NodeWright-tuned cluster

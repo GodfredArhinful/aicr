@@ -26,7 +26,7 @@ a100-aks-ubuntu-training-kubeflow:
   005-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   005-kube-prometheus-stack/upstream.env: 6cc5141c81d6802ffd403025353c968516a4b522bf180f355d27478fbd15edca
-  005-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  005-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   006-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   006-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -89,7 +89,7 @@ a100-aks-ubuntu-training-kubeflow:
   README.md: 577f8802099b1d74e7f661f3e0d22218fdd0186eb8d11175b5ea1a6fac8db100
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: 0751fe5505cfdd96b9234a4eb1bcb63ad6d2604899e8a5c19d555f5357c21fad
-  checksums.txt: 6dcc3eaeb4033a36fca6fe9c01f10daa9f1f8687015cfac3983556ebc3222a3c
+  checksums.txt: 89feb29847c5f96efb1afa2b2c46af086201dadfc9c808d34ab70636956ca93e
   deploy.sh: 6e150641b9ae519796c308f2d58d40d40d5a3ca4d0359706a93a01edebcb0924
   recipe.yaml: 2c501b866928c5c615240db76f0c70c845f951382691cf75b4418f29b8eb2350
 a100-any:
@@ -108,7 +108,7 @@ a100-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -146,7 +146,7 @@ a100-any:
   README.md: cecfd102e1bcf751e53d117e6a175d105c3168a334edffdfdb0e2b3f1dbbfb19
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: a30a7a6b10f1fd931a623a891ad6adc450f839535b2a83a229776da1fb5d87af
-  checksums.txt: e5c677a5e34d7183366107c8c5e9afe2982c16527a3d32a2ce0a72880786906a
+  checksums.txt: 6bf86962b9feb9910696f89fa1869ff47cc8b572134b8b1dc7d05a09f5900db7
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: a7b1b1947800e2b6a76247607654ab2f413a9d93e2c88a97e1ebef69a5b67875
 a100-eks-ubuntu-training-kubeflow:
@@ -178,7 +178,7 @@ a100-eks-ubuntu-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -225,7 +225,7 @@ a100-eks-ubuntu-training-kubeflow:
   README.md: 9959816e57f73519e46f2087330acb24356ac9b0b8985b647d8aabc384c0c427
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 4783312365c4789c0e2649a3ccb9b85c59b73b5e46083226776828a2e2b27d5a
-  checksums.txt: 9e139073ba20785ae7b739730acaefea359c8fd3bed54355aebe549aced084c2
+  checksums.txt: b627fe6989e8f93e809b2ab1ec991bbf6f9d6b77b166798c2b12bf617ca58597
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: 36ec410ac08d08453498b095c14e8058ceb2a0edeaae998a77fd6cb2601ecaf6
 a100-gke-cos-training-kubeflow:
@@ -253,7 +253,7 @@ a100-gke-cos-training-kubeflow:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -305,7 +305,7 @@ a100-gke-cos-training-kubeflow:
   README.md: ae0a02cbac8877eae42a985016eb65a4f408b5165af30607d275b5c0f560e41b
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: ffb2c131478fa663aa33b66692e75484bd38ca35174b11b07b34956dba5d5948
-  checksums.txt: 5cf367c607851121db06c4efa602c2dd6beec38634a3a1b181c4754a6ec0a83c
+  checksums.txt: 9a1023e84d08b706deb40d821489fa1cc55f15a3190a659d2d4bb43f34ac78bc
   deploy.sh: 8aad016e8584415e5789618ef3f2912ca307ae43a23ca8e9299a2887f7499ab9
   recipe.yaml: 55159bec7aeba84ded28e04c6cff324b85598e74cc1276b289f5b6b316584b05
 a100-oke-ubuntu-training-kubeflow:
@@ -324,7 +324,7 @@ a100-oke-ubuntu-training-kubeflow:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  004-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -371,7 +371,7 @@ a100-oke-ubuntu-training-kubeflow:
   README.md: caefe863b0bc3e880710e20c4c22564944969cadcf89494fa7c5a680790807c8
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 4ca0af52f256d8edef302fb7c3e2c069d26f6d3c28a36a86516a26830dbf6e87
-  checksums.txt: c7ebb6fc5257398b90ba705cac63a0126cf0fefe936f7e66ea8ef8d33abfeece
+  checksums.txt: 4a4d98989b866a405e27d4f929b32ff61646ee2ea0960d1b1595a6766166b1f4
   deploy.sh: 07eca41e47360fc1f2de4942fb582087724f0e5731b0630143c69c0e5040cf46
   recipe.yaml: 7c4d347a5af69bdcf431ff3d04e1ed1cc60582e901c764185c4cc96c744cee40
 aks-ubuntu:
@@ -390,7 +390,7 @@ aks-ubuntu:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 6cc5141c81d6802ffd403025353c968516a4b522bf180f355d27478fbd15edca
-  004-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  004-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -444,7 +444,7 @@ aks-ubuntu:
   README.md: 370f979da101d0f5f17ad2080989bcd1106f83fdadc3bd876089cf46eae39a0c
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: c7bb983f871bb7541ea8e69df6004fc6a6aae8f6a91fc5c372dbdb7da60e52aa
-  checksums.txt: 089e43226b68406d84a40397180d53a77079de2181d131f1f1407d4a0651bc35
+  checksums.txt: 295d996b36ee34af26c6148026003c12f0096ae451a6cda0c05fe3cda8c607c3
   deploy.sh: e89a94d6c7b107ba2ca7a762a61011188d47c50d0fdf37c82befa22de2bbdb35
   recipe.yaml: 6c1eaf28a60cc85851ba68f4c5b18791937a74c333e5764f46d980d781ed1904
 b200-any:
@@ -463,7 +463,7 @@ b200-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -501,7 +501,7 @@ b200-any:
   README.md: dbbb2c9175938b0ce18cbfbc435f0d0d8e16741f16b3ee448f6ea040e6ef043b
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 71da067cc1051b308d21bda64b68df0a3600a3d1e1c4f57fb62c0095b898b39f
-  checksums.txt: 86c249399cb62bcdcf5b1e6dfd8893d6509c879c52987539ed7b254c2d2ac2c1
+  checksums.txt: 264d9ffd6c050d48a1fb7167b012b10cbc3b34173ffb97300d7e49efb9c4f1bc
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: 19cc2b56897d4c5912936a7e1152146bd630c9acddaff810d2594e9fe27f790f
 b200-gke-cos-inference-dynamo:
@@ -552,7 +552,7 @@ b200-gke-cos-inference-dynamo:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -599,7 +599,7 @@ b200-gke-cos-inference-dynamo:
   README.md: df6791fc1e60c66a3a4b22e78e91f5a2a316a31a54243e524e2c9c58bbb5ec6c
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: a3206d1697ac0a6e02e51c0b25fa3308aef770f493e6aa83ecd0f4b928b38281
-  checksums.txt: 408856aa9655ad2526948d4ffc74fcc48797a764d24129ad2b5f3df133383928
+  checksums.txt: 3cb156c4d4948a423ba890552de3be3be7d4757dc31fda23f3eb4114888018ca
   deploy.sh: 47ccd3111d186a4511e84e04df7c4438424aa00793b63b59cc3caf6a9803b7eb
   recipe.yaml: 80df3ae3b5539f5aba8742d6f653453d364647170f5bdac707a22d9a28843455
 b200-gke-cos-training-kubeflow:
@@ -627,7 +627,7 @@ b200-gke-cos-training-kubeflow:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -679,7 +679,7 @@ b200-gke-cos-training-kubeflow:
   README.md: 3aa0716cf2ff7e76ed98d523dd241c0b46005ff79aa6d5c86b41b11251cce5c6
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 417959ec269afb83dbde957af8128cf4d70951d392a04bc8de2a8d95de5cc7a1
-  checksums.txt: 73723e2c92e1788c771fbe510171852dd89ec1437c387dc39c1c7d2deb626a67
+  checksums.txt: 31e40e2d6ea443794878e691bcf5b3e582f98416092cac018bbbdf001b9b3865
   deploy.sh: 8aad016e8584415e5789618ef3f2912ca307ae43a23ca8e9299a2887f7499ab9
   recipe.yaml: c76bc64a58be433adba16498f1b2fc2320185e0d09f4a9643a5e74b3414d46b9
 bcm-inference:
@@ -722,7 +722,7 @@ bcm-inference:
   009-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   009-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   009-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  009-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  009-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   010-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   010-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   010-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -760,7 +760,7 @@ bcm-inference:
   README.md: 2ce78a6f365deb7fd4b69ee9d18e0524b231f7fc7cdf0aadc7018853c7bfa684
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: f6a45f21d2500a843ff47b29ba79646b7e20d87d20dac500e3f1c6e9019585f7
-  checksums.txt: c3c30313c2b26b73f4736638e850d10a03307f2768f664dc64d8e0229124a13c
+  checksums.txt: 98a458b11c947dfabbcbbb5c23da39d0714d74b3a178c3d78d2379fd5c9653f1
   deploy.sh: 8a6ffdcb553e8adc8d164dbb9c4dcf2434bf4208fe219ba97f26eeaf0b411942
   recipe.yaml: d03c57307ec6b0552353d892cc32961de8f238c6a6a834b138ce558eff96893b
 eks-ubuntu:
@@ -787,7 +787,7 @@ eks-ubuntu:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -825,7 +825,7 @@ eks-ubuntu:
   README.md: 8fa27643dfbd45b9f4ca55c20b74e1df0dba304fbc59c32835d0de9d8bfce892
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 68c36ff715f5fce0a4fedf1cbdc8d9db107bda533e2d934e20bd7b31d0d5ca97
-  checksums.txt: b376a7bdf0de6e3b5550069f2bfe7561f03845bcf922fa101e0d783f0f4ee03e
+  checksums.txt: e974c7cb8d0eb0eac8bb5fbfa9d435cd217c5bd4b81b85a949758332570843fe
   deploy.sh: 0c33b35e63157a4576120bf972d1a3799c0164fec1f84e9f73474bed4a13de87
   recipe.yaml: 614ad05f8f1360cf9d4cc890c95b3793a04495c9e15a590bae9bb1d0e77d765f
 gb200-any:
@@ -844,7 +844,7 @@ gb200-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -882,7 +882,7 @@ gb200-any:
   README.md: 05290e1764eb54c23aa0cb523041f6ef1a488d8f09db5d8348b5be39ce115c90
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: ede2ba14bc795adb959afc58a93a6827f0f7b133ffdfc24ee4c22d1ab36523fa
-  checksums.txt: 7cab669b96e5e838a5ecd8eb9f656d72cf959e32ced6eadd6a20029bf4cedc23
+  checksums.txt: 93dfb9ac25e475fa95d4ea8c4fe2b9004de2fe81208e3a8459fdfa06fa7b84cf
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: e165f41b1073ab39531c7884cfedc985c33285d16d801f3893e2d0823818aa3a
 gb200-eks-ubuntu-inference-dynamo:
@@ -937,7 +937,7 @@ gb200-eks-ubuntu-inference-dynamo:
   012-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   012-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  012-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  012-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   013-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   013-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   013-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -984,7 +984,7 @@ gb200-eks-ubuntu-inference-dynamo:
   README.md: 199fc428ffd1ed02c0f6fe5ecd60b2c49c721103d9309f3bfe005855fb9a2917
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 06e1be381e54cfb2bce590a119bace1495cf8f93d08d8a5e0a9b3cbb3c49a759
-  checksums.txt: a303fba723074a552d2319393108f4aeed48490488598b46a9b5d3a32e61de07
+  checksums.txt: c2192f81f152310ee664ef6c73e223034fb5b78133d44d0a6251b94aadcbd16f
   deploy.sh: 49c666f9e07407c9616ce9f33a3bf89e9357f93dfc3f877e7eb136ddb717945e
   recipe.yaml: 34ee7710eec547eff8c785cd87901dd5b911dee38431e5a79a6f9f5e3a479486
 gb200-eks-ubuntu-training-kubeflow:
@@ -1016,7 +1016,7 @@ gb200-eks-ubuntu-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1068,7 +1068,7 @@ gb200-eks-ubuntu-training-kubeflow:
   README.md: c745c9fb8c62071e2bf58281cffcd4a2a570a2078ce27deaf070d208daa6f991
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: d0bd479f2a15a58d23bf945c47e2225b8f4d74ae939e52f9b6efd62193f025d4
-  checksums.txt: 3a4a281d8daa23a26fccaf882d28441ff5fe185d7617f03918c1792276b6dcfd
+  checksums.txt: 370c222fa9d8066a85829598875acc6436c849e837b45f01c7455aa978b1244d
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: b784a5e516d50d92920612721b73cdf692edfa57212bda3b63ec8cc79cb775ee
 gb200-eks-ubuntu-training-slurm:
@@ -1100,7 +1100,7 @@ gb200-eks-ubuntu-training-slurm:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1161,7 +1161,7 @@ gb200-eks-ubuntu-training-slurm:
   README.md: c96a7dfdcf5fb1a595b018afaf89c877875a987bbfbcbb894b8b6df588424d40
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 11b645b5e8a2358050f19c2e4510298e7b4ab6da9f10196f728c166764c2cbda
-  checksums.txt: 5ed58ece142a899a438d8416d8b68a3f4eac710d1d5c9b58521ae7975c78085e
+  checksums.txt: 5561200061bfa2b8dd18679bad77bdbdc0199089568459ac1b0e5b002a88617c
   deploy.sh: 62dcd0ef049bad00bbbb6b3fdb847d8a964da9ebb4307d863a136f62149111ed
   recipe.yaml: d018477a09021df113e0e24272919f58cd1a9d8bd778db43c71d898d02407a42
 gb200-gke-cos-inference-dynamo:
@@ -1217,7 +1217,7 @@ gb200-gke-cos-inference-dynamo:
   012-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   012-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  012-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  012-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   013-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   013-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   013-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1270,7 +1270,7 @@ gb200-gke-cos-inference-dynamo:
   README.md: 69cca87e2d0af978848cd352964dea0cd6aaa90fdecd823d82878f10f9b911b9
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 17defca215122c4b2045d31e453075bc49ab0d09034606bcefb3c83c73a8dd0d
-  checksums.txt: b13f4434862573edf246e833f7b089e09859b07f4571b75d80f3c06e09125824
+  checksums.txt: a9170bfc9312978471751f871cb69108616204da8d3635062bfbff213583d8ed
   deploy.sh: c59d9e436db82aaa43881be99ee6230632d4a11f2cfb4065f10fbcf342c67423
   recipe.yaml: e42e528faffd97160939f26cb294490227531c663ecdc617a84db0488da3516e
 gb200-gke-cos-training-kubeflow:
@@ -1303,7 +1303,7 @@ gb200-gke-cos-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1357,7 +1357,7 @@ gb200-gke-cos-training-kubeflow:
   README.md: 1b20b6dd6c84e547738698498bd65d765c3919e3a637f2abaa36907c3868c146
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: a509d009efef4ecfc132ebc367ace1f902917a4d27628c95bc6eb4131ca43a6e
-  checksums.txt: efd7183ffe07ebffa8c051116ca06bb777373ccfca89ab6da38f15fa8ac63d3a
+  checksums.txt: 1d05bcc15c904fc37a635f2a2d22fa6c2df1e37e573bb04ef158bcdbc57321ad
   deploy.sh: 52903304333929bfba86a48549de777aa452922db8d00d3dbb30dbc2e71219c4
   recipe.yaml: b4468a64402dd28cb290732cc40cf5e91739b0836faf918ecbc5a3d28c2a5aa1
 gb200-gke-cos-training-slurm:
@@ -1390,7 +1390,7 @@ gb200-gke-cos-training-slurm:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1452,7 +1452,7 @@ gb200-gke-cos-training-slurm:
   README.md: 2750cda8e66837e55263dc7485ede23614d85011d46b37c1a46d06c4a60694cc
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: d05aee181cceaa44bf7a0f60a1dce3d99fed2cc441ea2376f93653273a06fad6
-  checksums.txt: 57f96b7282bd23286da47be29c52b76f3ee9b51f98f5249b6c639621dcec920b
+  checksums.txt: 40c31eb2b0896afa0724858e839e297ced4b451b76263f86e6ce571f08ec3279
   deploy.sh: 1c2b5ab4d29adbf8ecf202ddc0812254d7e30fd42aaac8aed396ffc77b0975d9
   recipe.yaml: 4355cbbe1678f9d12803121de5a8a13305b5395434a024c378fca0ffa17b480b
 gb200-oke-ubuntu-inference-dynamo:
@@ -1494,7 +1494,7 @@ gb200-oke-ubuntu-inference-dynamo:
   009-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   009-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   009-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  009-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  009-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   010-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   010-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   010-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1536,7 +1536,7 @@ gb200-oke-ubuntu-inference-dynamo:
   README.md: 7cc249a4e44d561c8f71021a68d38b31629303f76649f31ca7868a5e28847fee
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 51cfed6f640a8245a10481a8c826987ac518cb991ddbef9db266c5fc9a16f598
-  checksums.txt: 25b039736b2293ecffe0cf0d56b61949d7e716106042c681ac14cc96c663e514
+  checksums.txt: 292f59e0668db598090676a6a65ca72de347cb8783200eaf4910c47f2bf21ad1
   deploy.sh: c45168b79b9fc6e619edb84e8105dcb2b279bccfb15317f6a4ba40a0cd9a0595
   recipe.yaml: e5e5755d94b6dd05e48b401fa7c18161951002b5328018d9c6b1628d3d804e35
 gb200-oke-ubuntu-training-kubeflow:
@@ -1555,7 +1555,7 @@ gb200-oke-ubuntu-training-kubeflow:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  004-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1616,7 +1616,7 @@ gb200-oke-ubuntu-training-kubeflow:
   README.md: a0b1450d793ce81a4a9e9fde4c40e4eaebe4238b37270d1dbb14b9eb2261a8bc
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: cfcb302e5712bacfa08b3b8e7c36036b1681d2e8977557017d3e6935a19a5cae
-  checksums.txt: 99b6e77b308121aaa3e0696aa77ac04f5f48b85309a12c9093489655d62b276d
+  checksums.txt: da12879f141f2e4750a7928265ee4f54f2fb50436024610b02302abb551e3495
   deploy.sh: 3d169868e9d28fabbe6da33c523e7e80dd3d129189df93a1d1fa69059978d5c2
   recipe.yaml: c34f4685ec0d359b3637f25f8cd945c77db88ebe6513d3282d8e82d69546fb70
 gb300-any:
@@ -1635,7 +1635,7 @@ gb300-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1673,7 +1673,7 @@ gb300-any:
   README.md: 7f91902b4f8b77042f985559b86014758134088b5b4740e9c4b5846b763905d4
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: fb99bfb0bf2dc2ea471fbc559f8f1a32fcf60682d371ba1fc67265eb5f63baa8
-  checksums.txt: 2e59725226060f84c26ee9fccf42a0bf899a7572b262b1161444d25b89e6bb93
+  checksums.txt: 98d174790d12a3ad522bd07f0680b3b00839cba7a88a6f789d38a27c1317fc10
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: eac0a1ce931eccf6105078553637063fde1dcc5d27a83632c1e2a06394b4e01a
 gb300-eks-ubuntu-inference-dynamo:
@@ -1728,7 +1728,7 @@ gb300-eks-ubuntu-inference-dynamo:
   012-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   012-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  012-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  012-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   013-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   013-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   013-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1775,7 +1775,7 @@ gb300-eks-ubuntu-inference-dynamo:
   README.md: 8b7149e47cc7317b510263670d2dc6e1da9464e8ca92ad0246d0662817ff5f05
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 03e0ba11069c78260691fcdd1cc374f4e634b7db85e71b7a7c65f86d706f482f
-  checksums.txt: dc02125620a89d2dcb74b6d87b2e0838866a82e98fa90b54f3e832cbabd28553
+  checksums.txt: 6fa3b7c62f049a796ebfde3e6dd341f2cc9c7eac767460c7bfbc9c6730761302
   deploy.sh: 49c666f9e07407c9616ce9f33a3bf89e9357f93dfc3f877e7eb136ddb717945e
   recipe.yaml: 70f39cea3fa19db9ae0f73382f2e04865b7e7ccb3f000aa925a3e67fd54c6acc
 gb300-eks-ubuntu-training-kubeflow:
@@ -1807,7 +1807,7 @@ gb300-eks-ubuntu-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1859,7 +1859,7 @@ gb300-eks-ubuntu-training-kubeflow:
   README.md: aa0fbb402e303bcdc0c7975b5d8745e9b37f1119fb75a68ee1d69896176ef658
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 8f12a63e9c6e33ba2c81b2c7489d64b0de405c1548e4fe010a192edd05d412c2
-  checksums.txt: d12afe3e520b21570d281f129fa412808d796054a0b5cea3d192ae0e79f06a74
+  checksums.txt: ed8265d29c6bdf4bf8b2a6c048d84e2cee81b09a55d8f45c18056361eadd9812
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: c5ed1453e2ceec158804931f6bb1c4d5034202b39cf24d4ea7e8c1f7f03c04a9
 gb300-eks-ubuntu-training-slurm:
@@ -1891,7 +1891,7 @@ gb300-eks-ubuntu-training-slurm:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -1952,7 +1952,7 @@ gb300-eks-ubuntu-training-slurm:
   README.md: 2fe716cd188d6e1bef6d3dc16e5af849bf79e93d8adaf8a1c9294dbfe8946e70
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 4e5d9b6a7499487f3ec6ba6659a8bfeca2f9f3285210d8d3030eb985a5fea3c8
-  checksums.txt: 09b6ea131b44052aa5412f98cc8b514a79dc45d818450b4e38aba7a41c187e10
+  checksums.txt: e9d7344537fe3f624240243a9649c27f373ff269a6d14993660a5dc431c83b13
   deploy.sh: 62dcd0ef049bad00bbbb6b3fdb847d8a964da9ebb4307d863a136f62149111ed
   recipe.yaml: 815b5046e119f7d68e58c76b805efb3b198a017bb021c1aa5ec1a7a77c8a1160
 gb300-generic-ubuntu-training:
@@ -1976,7 +1976,7 @@ gb300-generic-ubuntu-training:
   005-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   005-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  005-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  005-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   006-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   006-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2023,7 +2023,7 @@ gb300-generic-ubuntu-training:
   README.md: b04c702e0e4fdf84c53496def803c373e8a3cc13461e07c0730b9d973040b724
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: ab4a7ad6bb7a1a7fdaf08aae20ab41e152661ec84466927fbbba3d28880603d7
-  checksums.txt: 7d41e1dc916751a6b82bc27ee0864503300129e7e35790fe8b70e4ad51468b4e
+  checksums.txt: 6eb912eaba8eef8ec87764feb75332dc1ca44fc635ecb94f3a235b714a47c4be
   deploy.sh: acefb769cf663748981d702626bfeaac032c72ad37a7e29a9803d194f25e3b6e
   recipe.yaml: 85f46862c291c3c4bdcb30725ce5c65936c0346fbcee51ce9f5ea8a25482362c
 gb300-gke-cos-inference-dynamo:
@@ -2074,7 +2074,7 @@ gb300-gke-cos-inference-dynamo:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2121,7 +2121,7 @@ gb300-gke-cos-inference-dynamo:
   README.md: 8ac399262b3fa27b797f250409f3ebc5cfb3249e052cafa87ae146bc73520696
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: eb8a58884f85c886ffcc62d252cfc9a58242ca2adca89da398ede5d1158b1092
-  checksums.txt: 310c1e2b7432d8bdc39bf0e1facd4230f008feb1b40130aa6fe1c441d23d108f
+  checksums.txt: c013ac61dedeeb4715dbf21ba2adbeb62de198b7cb94bf32650c6889dd241948
   deploy.sh: 47ccd3111d186a4511e84e04df7c4438424aa00793b63b59cc3caf6a9803b7eb
   recipe.yaml: f8915a490e31820a266062f3d8b055fb13d65c35b988ae0658db60c417431593
 gb300-gke-cos-training-kubeflow:
@@ -2149,7 +2149,7 @@ gb300-gke-cos-training-kubeflow:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2201,7 +2201,7 @@ gb300-gke-cos-training-kubeflow:
   README.md: 1788d726beaf18981983b042f315fa8f3a2c74859bc66dc0ffe6717a34414a18
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: dce28d19f9dfb288afebd4568863a20cbdce6e1b2f13fa1bc19c6ec37c7a4abc
-  checksums.txt: 43fbfadee91d3f8d97abef395d81f7f4febfb2b9470a641e105c9aaa9ae79dff
+  checksums.txt: 3d5eaf4a49cdf33b11d95dbe3cdbd34a1cfb7c0bdf37c34dfc7c9f36367c5919
   deploy.sh: 8aad016e8584415e5789618ef3f2912ca307ae43a23ca8e9299a2887f7499ab9
   recipe.yaml: ffc9b2233d8d63e7b2db96fdc7a61371a57c923d214d97ff968a9aab5ecf6eee
 h100-aks-ubuntu-inference-dynamo:
@@ -2248,7 +2248,7 @@ h100-aks-ubuntu-inference-dynamo:
   010-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   010-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   010-kube-prometheus-stack/upstream.env: 6cc5141c81d6802ffd403025353c968516a4b522bf180f355d27478fbd15edca
-  010-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  010-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   011-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   011-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2306,7 +2306,7 @@ h100-aks-ubuntu-inference-dynamo:
   README.md: 519f8ffd70f42d555208f34b9b37a1d3cdab952cbc2539346d75ffe95873771f
   UPGRADING.md: 30c544b502819a16a97b2d4bd9187da5ee6f526faee00d0752969b989837576e
   bundle-info.yaml: fb96e9277c9d83fbdeda877bd75edaafa268c919d8f375973162c7a247cba486
-  checksums.txt: aed7e928ca4f4badc9c17b8ba34780de5535bda4d245c2a827b992094c2c8845
+  checksums.txt: 119b26851eecb2872dfc08c527a6b4e7c87338414a105d5488c065a51b9fc85a
   deploy.sh: c9e22ebc10c26b5e42a3c0b82150eae1f36a3fcdab416cd42abf03e414937bf3
   recipe.yaml: 654f769306fb7e6b7c887b92d692cd7afbe67e63bdda5f0f9107dd2ad8f3443c
 h100-aks-ubuntu-training-kubeflow:
@@ -2330,7 +2330,7 @@ h100-aks-ubuntu-training-kubeflow:
   005-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   005-kube-prometheus-stack/upstream.env: 6cc5141c81d6802ffd403025353c968516a4b522bf180f355d27478fbd15edca
-  005-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  005-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   006-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   006-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2393,7 +2393,7 @@ h100-aks-ubuntu-training-kubeflow:
   README.md: 82841822f42f74abf67f4ca4c49aefad91a415a101468f25365b61d645b69cf6
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: e25579b2dc02dd7ba60d28466030d8654d1a308abfe93e4b94644612e564a7a0
-  checksums.txt: 83c5375ebcaf57ad80ebd998ed091b1ec8f187da4034b4141dd123cdaf4f88e5
+  checksums.txt: 7598fd5041b59ee6d9327ae44b87a19cb779a3402e281af8fad9f23b75f1e26f
   deploy.sh: 6e150641b9ae519796c308f2d58d40d40d5a3ca4d0359706a93a01edebcb0924
   recipe.yaml: c3c41d7df7dbd770769fb83a003f578121e388c4f414772d6d5a565fa840ae23
 h100-aks-ubuntu-training-slurm:
@@ -2417,7 +2417,7 @@ h100-aks-ubuntu-training-slurm:
   005-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   005-kube-prometheus-stack/upstream.env: 6cc5141c81d6802ffd403025353c968516a4b522bf180f355d27478fbd15edca
-  005-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  005-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   006-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   006-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2488,7 +2488,7 @@ h100-aks-ubuntu-training-slurm:
   README.md: 3d020e3e0c900d61f8a0bbc4e895094c4f1cda07387ebf6015bdb5f8b9381449
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: 7878cef07b3f0a3b7cc51ab3548db7c0bf4ba79f587d7ca88a07080bf98f5f32
-  checksums.txt: e23cda764dae10715d49b0aa570db1c60bdbecaa37f9d438b0e20971b6f2cad0
+  checksums.txt: a06bfb8a09974a3f9b845fbcf24134eaad8261cb505e2f1a492ed29d5500df7c
   deploy.sh: 09a25b00516e0a091540409523af86e5b636d6d59d05adaeaac0994869ac6af5
   recipe.yaml: a6236471da7e356d176b3ec1b51778df16336a040ca3cd439c14f6c10fe3b623
 h100-any:
@@ -2507,7 +2507,7 @@ h100-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2545,7 +2545,7 @@ h100-any:
   README.md: dcf7fb4dacac786f0aa1056c7beaec737700b064b26b36770abc32eeaac6d96e
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 4ddec0b1b94873719837d0f3997b20ba088a664f7d6321f8ca38bab0e40d8c2d
-  checksums.txt: bfe7305512e72e4eb05498961cba42a17744118df58c0a13a36f8c4ae297d61b
+  checksums.txt: f5bce5258304df3b8a64e20cf4c8f31b4a9cf80f85559df3ffed3af57c51a698
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: da768dfba942a53b4566ba2000231ab5f82f8422c5627ad4a9bff463568a97c0
 h100-bcm-ubuntu-training-kubeflow:
@@ -2569,7 +2569,7 @@ h100-bcm-ubuntu-training-kubeflow:
   005-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   005-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  005-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  005-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   006-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   006-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2616,7 +2616,7 @@ h100-bcm-ubuntu-training-kubeflow:
   README.md: 30bb1abd554fe47e29a44886254b18c91d5024d1287d2f0ae0cf12e9e10ea434
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: ecb1122b6843a514a7de779f3a50acddeb443c5b0bcfa176230f0465b06487e4
-  checksums.txt: 84915bcaed75e575bea0c93b75bc2e8cf9428385449f6e26474c7546a5491620
+  checksums.txt: dd6a58b23dc8b853d63facb5282169f29f82ff9921956be6e57763b8fbe68340
   deploy.sh: 33ea2d3f4525987301a643780c4f2b73c7103844c826b62bd45d78758afe6e97
   recipe.yaml: 530d661ef92543308669cbc1ef2c49adb2b7686a460b38eba3a1030dfc63eb17
 h100-eks-ubuntu-inference-dynamo:
@@ -2671,7 +2671,7 @@ h100-eks-ubuntu-inference-dynamo:
   012-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   012-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  012-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  012-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   013-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   013-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   013-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2713,7 +2713,7 @@ h100-eks-ubuntu-inference-dynamo:
   README.md: 800381c4937b98ec04c6cc66ddc5d2294ed7e36d692bf0aaf919ef24b6929ddd
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 6914d8745f14d84672f47edaad030de6099e0cb0cd164850707d07ec546e90ff
-  checksums.txt: 4cfaae813731075bcada17c704d12fab46b055abba1f3fb69f95b7890068cb01
+  checksums.txt: f4043a4f46ebed9acf07025c5bb4a334f7f64f91b547e29409f0a5e4d3855c02
   deploy.sh: 49c666f9e07407c9616ce9f33a3bf89e9357f93dfc3f877e7eb136ddb717945e
   recipe.yaml: f8ccc976b0de67ec946eb4115c8fdcbb6ce05e2ec3e5b92719e5059f274588ee
 h100-eks-ubuntu-inference-nim:
@@ -2764,7 +2764,7 @@ h100-eks-ubuntu-inference-nim:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2806,7 +2806,7 @@ h100-eks-ubuntu-inference-nim:
   README.md: ea09dd4e03b7b0064c4565489ebd48099052d094990511f9a35e77345fa66cda
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 69372667d339efd1887cd1b44db5d30fbf97c083694308c00cdda6c472245b7d
-  checksums.txt: a7ce971098f2792c1f173d8b8753aed16bf4d6f085835c7f6e947399aefbb62c
+  checksums.txt: 8bb532255dbf39fe8cc790424e50e710429d2a288c2a7757139d8a58da98be24
   deploy.sh: 4aaee888f75718c1a573103f3897a59fa82074ff3dc8a23703bb81414b8cde08
   recipe.yaml: dbd3be06f6a590bb3365fd593982351c732af483725c9d5a4456c0ead40ededb
 h100-eks-ubuntu-training-kubeflow:
@@ -2838,7 +2838,7 @@ h100-eks-ubuntu-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2885,7 +2885,7 @@ h100-eks-ubuntu-training-kubeflow:
   README.md: 9b0778d217a7046d7f540c62aab9e5f91098ff8d3dfdc09ea8ae71b897cd3c71
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: ed8b3dd9c11a299734fba9a0fdeb3c30a35d397ccf30a8834053cf2347cafc73
-  checksums.txt: 8ed6ef65d12c428334471ae009807dbeeb06bd6c24192705c3447d5f5f0b320e
+  checksums.txt: 71b443d8efc25c19da212c68f923d75abd87927bf9e68688406ba1743c2cabba
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: 69ee6f3374a025f712cbb69e1b12321fa2d86064afcd517dded92ec811384826
 h100-eks-ubuntu-training-kueue:
@@ -2917,7 +2917,7 @@ h100-eks-ubuntu-training-kueue:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -2971,7 +2971,7 @@ h100-eks-ubuntu-training-kueue:
   README.md: 5aca00f0b0c48df261edc63472289c3cc433c2d36a081ac866e1473ac3d15753
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: d2a5ed6d1e20c0564566a0d324ccf1e6d21078ad1b53528232779477f7de4d33
-  checksums.txt: f58860836d8af9253844161c1413a686d3d1d1406cab92609b3631d379a6ab03
+  checksums.txt: c027a069bc7601911c3cb10613b5eb46a2bf1682421ebb70899a5126c1cadcef
   deploy.sh: cac0e7e3357e082223b2c8fe30176291fb4c4ca48cf833b1a01994fbf53fa639
   recipe.yaml: 998a0da6f7d80177daf05753c98fa65ff7840de4cba1a18763b949634b49c1ce
 h100-eks-ubuntu-training-slurm:
@@ -3003,7 +3003,7 @@ h100-eks-ubuntu-training-slurm:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3058,7 +3058,7 @@ h100-eks-ubuntu-training-slurm:
   README.md: ebf7a7151c6712924345dc64f9c26bf3a149640d5d8bcffb76aa47faf352bc79
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 7944afee442882176cc0954773fdac788b127f9755ac945c566b62c0248c43a6
-  checksums.txt: 0883f6f42722e54506cfb91ef436e1266556bc0baeb19760462a8631dc1e7243
+  checksums.txt: f3dfd4de07a3462446f6d332e67d3d463446852306c77bb1fab0087e4bfe6134
   deploy.sh: 62dcd0ef049bad00bbbb6b3fdb847d8a964da9ebb4307d863a136f62149111ed
   recipe.yaml: e4f678c76468b5ecafd4de4d317bcb56b59c00362ffdc0347341adea4c9372ec
 h100-gke-cos-inference-dynamo:
@@ -3109,7 +3109,7 @@ h100-gke-cos-inference-dynamo:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3156,7 +3156,7 @@ h100-gke-cos-inference-dynamo:
   README.md: 7760acff92040496231c31e2b519435f19eb118250a7f92047aca349070b208c
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: d78afcc0dc1d39c0752109700a08337d8aaf7e45c445dabbdb88ea8782c8c7c0
-  checksums.txt: 759252f693f4fcac80d6a9491243e84062f5ff63c57a6fad0a32258268e257db
+  checksums.txt: 17aaeee844f6ffbec117312693417dad62e6e1b0c96177deac9ee3e6ca7607a6
   deploy.sh: 47ccd3111d186a4511e84e04df7c4438424aa00793b63b59cc3caf6a9803b7eb
   recipe.yaml: e88df1e56dc2d1ed57d6b24e879a8c178e31a2b639e2d29c5a551071fe473e3c
 h100-gke-cos-training-kubeflow:
@@ -3184,7 +3184,7 @@ h100-gke-cos-training-kubeflow:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3243,7 +3243,7 @@ h100-gke-cos-training-kubeflow:
   README.md: df4f7a4ee73b22598127e4ae181e773f1e2c353d57015f441dea41509e3d2431
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: ff21742dd204e5cfeac591503ea21fd6091d50c445f1c30aa542e0af3945392a
-  checksums.txt: 018a1e564b435ed452185015a4817eac42dd8cc059baa383a39d6ebda291b3e8
+  checksums.txt: bbd85ea04ffdc9a66b9402cdfec81676e7e4241278a4ff5e2d1b8e614bf2ceae
   deploy.sh: 531380a47ddf30bb83b2f01c74e4c102302e198c18e2c3b914987fc1e5242936
   recipe.yaml: 08db520df1b06a6d5d45501c14bea095843de0a79051f7aec886d030bdf07085
 h100-gke-cos-training-kueue:
@@ -3271,7 +3271,7 @@ h100-gke-cos-training-kueue:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3336,7 +3336,7 @@ h100-gke-cos-training-kueue:
   README.md: 0c96470249d4729997105e78080ac9631c54c4901e196e19a96636b4b822a7be
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: eb7186dc1da5a166dd03441ca97b71b3228409dd4175c07d21afd3fb2299170d
-  checksums.txt: 8bdf7a8157c15390531520c76ceea2a981757212555cb322821251b8f4401647
+  checksums.txt: 032afff3b2e6d31437411c490fedc88f9a768c49291b907e6e91abfa5a9f7abf
   deploy.sh: 3ccb9dcc1b101f3a3e0797362dcbf012693a9aaa4f20efce6a84564c4d4efa6e
   recipe.yaml: 59514bbd6d050e4b9f8d8795b75b53c698cc5ac96d619fe432375994ba702381
 h100-gke-cos-training-slurm:
@@ -3364,7 +3364,7 @@ h100-gke-cos-training-slurm:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  006-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3434,7 +3434,7 @@ h100-gke-cos-training-slurm:
   README.md: d6119efda3046f8e0ef03cc2b010a4337d3edbfc020b39ed25c4330d61ed19c3
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: c4d5a7462797491c9a7da1a8a0d817105690cede413b9ea399691ee10bfc2bcb
-  checksums.txt: 5ae7fb55169d9626c5d5144f657b4fb18b62cbcc1cf70aa4669c0b30df66e2f0
+  checksums.txt: 6105acb5c66c65f7ccf84efaddee4e6ab1d5b52552a4b7f84d3e31629ed6fe35
   deploy.sh: 241736fee9864d9d6dbf6ae0a38ee154d4acb4f8549ed8fac4adcaa04a23a32a
   recipe.yaml: 904e91c7fa0650d68a186604c8e8b57e1f88438ab48563353ef575ad2c183a1d
 h100-kind-inference-dynamo:
@@ -3476,7 +3476,7 @@ h100-kind-inference-dynamo:
   009-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   009-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   009-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  009-kube-prometheus-stack/values.yaml: 8c29da316f075611eb76e601df4e590e6d759bf27c22bda5fbd558e40a94d23a
+  009-kube-prometheus-stack/values.yaml: 4cf26868afd3bf73025f8a581f28883c945c294ee665d6bebd1555f96f672a8d
   010-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   010-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   010-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3522,7 +3522,7 @@ h100-kind-inference-dynamo:
   README.md: c7be329b3020c0fb27bff9c25628aa12eaed60b92075652ba2e1672da43da77c
   UPGRADING.md: 30c544b502819a16a97b2d4bd9187da5ee6f526faee00d0752969b989837576e
   bundle-info.yaml: 2e3d58c59b78fe620254aee7779380fd3c30010c07c21feebdd07743db3d125a
-  checksums.txt: 21156d2e34eded70286556975836390e4bbf920e1dac0a7cdce3b35fd043acd1
+  checksums.txt: 81a4141e92fe842fc9a0912c4bab0f484889940c30cd861deb80c6b565d311e2
   deploy.sh: efa64c17bf4e193468f41c7c2ae5900668b1e9e22a2b042b5e5e3c7c7b2d7259
   recipe.yaml: d84b9cec2bbf3ff7fcfdb8c1d0eb10fa5042eea690c4b30306a404a9762858d8
 h100-kind-training-kubeflow:
@@ -3541,7 +3541,7 @@ h100-kind-training-kubeflow:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8c29da316f075611eb76e601df4e590e6d759bf27c22bda5fbd558e40a94d23a
+  004-kube-prometheus-stack/values.yaml: 4cf26868afd3bf73025f8a581f28883c945c294ee665d6bebd1555f96f672a8d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3592,7 +3592,7 @@ h100-kind-training-kubeflow:
   README.md: 6488497768034db9da9192e9dc18f04bcc9f6e077bfc5025e6edd9708c2d40a6
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: f0d51c894749ec3bb3d5dfad56dc792b5b9cb94ca1f2bf8b409fe27078b4d2d2
-  checksums.txt: 3c5de7c60c168744f6459c4b0db38354ec45468edf3f0e9fa56a47a9e5f354ee
+  checksums.txt: 582189d1596b5ef1cffddd89061c26336335760c674c9eb8e85c8a330e079487
   deploy.sh: 3d169868e9d28fabbe6da33c523e7e80dd3d129189df93a1d1fa69059978d5c2
   recipe.yaml: 68873fa405dea5ff5e2f30667aa5e5f83c786e1920b0b37be9a4c8bc7792ebf3
 h100-kind-training-kueue:
@@ -3611,7 +3611,7 @@ h100-kind-training-kueue:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8c29da316f075611eb76e601df4e590e6d759bf27c22bda5fbd558e40a94d23a
+  004-kube-prometheus-stack/values.yaml: 4cf26868afd3bf73025f8a581f28883c945c294ee665d6bebd1555f96f672a8d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3669,7 +3669,7 @@ h100-kind-training-kueue:
   README.md: 784605c6b682756849fdd894a4f3e87cb251c9a2249bc5db37d476798ea1bda9
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: d209273f33758909245e42c052c417eff163090ffcb6d8ca30d40bee673fac9f
-  checksums.txt: fc44126d9f218637342fe1931f9a88cef78c942b62db1a2ed6227027542afa4a
+  checksums.txt: 5f78cc22ece4f658af0211db081c419baa8ab7b39e01170c54c7e41846afe8db
   deploy.sh: 3f6b830560c2d54850daa000cfd5bff34600041f4a36a8df2ed1550195ef50bf
   recipe.yaml: 68663569902af7930d59b33e5bb446a077dbf31524ad6a6977d81078d4cf297b
 h100-kind-training-slurm:
@@ -3688,7 +3688,7 @@ h100-kind-training-slurm:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8c29da316f075611eb76e601df4e590e6d759bf27c22bda5fbd558e40a94d23a
+  004-kube-prometheus-stack/values.yaml: 4cf26868afd3bf73025f8a581f28883c945c294ee665d6bebd1555f96f672a8d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3751,7 +3751,7 @@ h100-kind-training-slurm:
   README.md: ed2a0979f266bbba8b6189ae81eece800461b39d8fd076dfa16c4d7a40092e2f
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: 2213d9122181f51149e5bd2273dac97374234cc6f97cd21f334c7f1fa48ddf74
-  checksums.txt: 7d19f064c375e070e429714f32caf21990e438fd27d61020fece12680b82a25f
+  checksums.txt: 073a6fa00785d961ac479d3a5b510613854290491de148c6f49f1b26d68bb64c
   deploy.sh: b7a7204a0b34c272c7dc5634000b595f5df919ad51f74d16665fe87d4f751d8e
   recipe.yaml: ebae7f2146cc1ffcf7fcf126125ff02ab35c104199b383cc5425cf4c0a540caf
 h200-any:
@@ -3770,7 +3770,7 @@ h200-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3808,7 +3808,7 @@ h200-any:
   README.md: 7cac25291f98aa09a1daefc4e18e96967dd2a60c54d54ffe52390ce379bde0f0
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 124f622e701b85abc6ce9f0bf48af053d28611b01d18b22b19f10b860772c1b3
-  checksums.txt: 7ddfb5c4ca7bc9d01ec88e994fe04b9975322e04df4707e2a0b4591e58c96210
+  checksums.txt: 67b4aea123970b0b1fca44d27c434491469870cc83d275ae3dabd2603858ef9f
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: 65258c4f8d2d61f8391d9a59ba0603047da92fa6e9ca75232be83e6fd3c61982
 h200-eks-inference:
@@ -3859,7 +3859,7 @@ h200-eks-inference:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3897,7 +3897,7 @@ h200-eks-inference:
   README.md: 1103a2cb10b4fadc2f40daa24ae0eb771b3f9635cd70fad7324775646f1d721c
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 864b75bfb64d10424c8e5e24fc30308c585e412112ef9e2277f2544f95444f0f
-  checksums.txt: 1a66c1fb180fc6f0175d205868f26daf484fe0302722fe5c78a1e80fb0436226
+  checksums.txt: 2189444baf7597deaf824597dd469e9e933e61a9d8a8a694b096f8abeb34c5d7
   deploy.sh: 9b3754f3f1aa13afd97d1383866294227fe95995fbc850fbd40797a461124212
   recipe.yaml: 8bd8d9d9dabb6fcbf1c70f746be15a106afd0136ca9b35572e59bcbc11396b08
 h200-eks-training-kubeflow:
@@ -3929,7 +3929,7 @@ h200-eks-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -3976,7 +3976,7 @@ h200-eks-training-kubeflow:
   README.md: d3fb079efd47ddd757236996930e0d1901b5383a0a64ee50ec6b8320b3e44f28
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 89cd3ccd31d1920409f30b80318fe7711c5f21ce3978c782bae30fef09f88ba9
-  checksums.txt: 4584c77ec50d76e0d6fdefcf046d7a49a159ac8886fea4dcc1120faf7da910ff
+  checksums.txt: e402a45fce6746f43e47c5cac1e16daabc5987b1c6915a0284cd81ee6928b4c2
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: 49ac6ad3f9fdcac1339d095cd3f5a4cc24ba9427c911996dc7d7a66441eaacb7
 h200-k0s-ubuntu-training:
@@ -3995,7 +3995,7 @@ h200-k0s-ubuntu-training:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4033,7 +4033,7 @@ h200-k0s-ubuntu-training:
   README.md: 57a4fb294834e281519e45fe56e44af3f5cafc4f8db24f42643f3fd35ac9d2be
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 40dd7b5ec1b35b1ed0e804d5c1d35436b2efa9e1a529ae68e4098b67f85dec18
-  checksums.txt: 37c7ef120b35c7e52a226399cb30468e4897ce9325a3e97ddf3bbeed981248de
+  checksums.txt: f340cfc07cc23b890b53d1670f1beae628151f4b75260ebc68c90d1ddd9ad412
   deploy.sh: 446963339c5b7fd160db5dace16e1163b77aa625ff275fe4d2a98cc9f41ed4c9
   recipe.yaml: 3be22e55d8c5bf51ad28635d2b99b461e89934abcca8b90087ed029d39efbfd3
 l40-any:
@@ -4052,7 +4052,7 @@ l40-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4090,7 +4090,7 @@ l40-any:
   README.md: 76049ea7cd354f73fd0f07c12c30f423b7c2549ea503ae54454fd7c4f7ef36b6
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 8d8730bd235ac08a1c5f398cff9d8597591e3b9454397fa0ce72a44ff501a3f4
-  checksums.txt: d3d19e8ac49016182186732f6a32de93a94a492c4ebf1befd269cf925054cfe0
+  checksums.txt: 9cabcc56dc404f70c7fd9e3235b65dbff101ce1bbdc23680e2aed8740db5ff07
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: b431648cbe082de801a00c6699e306bb76ce484ea159cc1ab7429a0f13b95c1c
 l40s-any:
@@ -4109,7 +4109,7 @@ l40s-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4147,7 +4147,7 @@ l40s-any:
   README.md: 80f1358adac09b985f1033b7b8147b9c9b53bda5021ab19b315d322e636dc2dc
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: d7a7cff988214db23662d8e8c7f6269a8558435ac717af003c20608e85cd5e35
-  checksums.txt: 024710f6b1594580d481983c0662ac9d1faf88ba13d6a382328b957251fe3644
+  checksums.txt: 1635cd5156e52e99ebbc31614a58478b09133a4ea9c5c5fdb045365272013791
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: 21d009dd24cc1ffae7dc4c8fd47000b4d0b115892e9f2010c6ff6f794bca97a0
 l40s-oke-inference:
@@ -4185,7 +4185,7 @@ l40s-oke-inference:
   008-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   008-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  008-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  008-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   009-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   009-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   009-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4223,7 +4223,7 @@ l40s-oke-inference:
   README.md: baccff90af95a066cc15f4274f3be724ea7e2780ebd310c53a36a1a718bb8199
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 4fb0145651a3981968883028f004d8ec17ba412a127a607e4ca45ca0dab9c9ee
-  checksums.txt: da1362d9b8d47951020de1b24d641dac6ea9667b0523de61b2e1bc87463174cb
+  checksums.txt: e6e1f86f94852723d58c1f38b8aa757f9da1dfd04dcca9a43c07bdf66222d242
   deploy.sh: c80552002dc96808ac24cceb27443b28f5d9a0a5cf84a7416ac39f3678a12d25
   recipe.yaml: 41588edcf3dd7c624ee776a37a2eeb57a40230db0c33069e934c7893aa495cc1
 l40s-oke-training-kubeflow:
@@ -4242,7 +4242,7 @@ l40s-oke-training-kubeflow:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  004-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4298,7 +4298,7 @@ l40s-oke-training-kubeflow:
   README.md: 260961c4483e31c1e575c1263f329ed54e3ace89f49ba6e6b80f81a7eb249e22
   UPGRADING.md: 9e0a586b49195f5c95e5bc974c4defeb58d5fc780317a0c4ee34cda433e37412
   bundle-info.yaml: fef73bb98e258d35dfe52b3fdb226dc5ce182c0ae652b97fb067f80f4513be1b
-  checksums.txt: a421e6ee37c4704d072fe45a9a9693aa91a1be0626781011f3170b116ea1115c
+  checksums.txt: af4bd3e71fc48c8d92820be2cb9307ab3099a07410ac34231797003f63521f0e
   deploy.sh: 3d169868e9d28fabbe6da33c523e7e80dd3d129189df93a1d1fa69059978d5c2
   recipe.yaml: dfb561a2adcaa174c738d3dee8f82eb40fe41b7c209cdff80e438d1a57747a60
 monitoring-hpa:
@@ -4317,7 +4317,7 @@ monitoring-hpa:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4355,7 +4355,7 @@ monitoring-hpa:
   README.md: c93e8e0b0051050bfca5a1b344e4dc7b589d612ee11c794b08cd910f01c72942
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 0d9bc41120fc205ac381d18ac58d42bb80838dc80d79a7f81ae6fbe0a06d152d
-  checksums.txt: 87afd1882452d57f613f020a1069f903b4fb291c77b138fcb9525daf4fd5a6fa
+  checksums.txt: 8a8efcec6ab894927879af1a780b4a2ecac61856f7718c08413bc7af694a6570
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: 745e552149e8570d7933cab80e2be85da663c5bdab1303bd546f2724a4ee88d3
 ocp-inference-nim:
@@ -4533,7 +4533,7 @@ rtx-pro-6000-any:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4571,7 +4571,7 @@ rtx-pro-6000-any:
   README.md: 4a6d98c08025de21edaf878845f7eb9d31035a44053fbad5f52bd93adca9b88c
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 29e4626c88e38a65ea190decf26eff06c9ff7c2d5122535044a807c54786405d
-  checksums.txt: 0a98ed98b9c3e5dc1d0db3049c3ca441a47a7def69553b74bf5d049109395c43
+  checksums.txt: ec59cc3c042e46e883d0a7f119193abb9e7a96881bdf35ba6e066b67f5b734c5
   deploy.sh: 9907efddf84764562860cb531446bd237e245c78e516f4e3556d428b23c06a00
   recipe.yaml: 942cdf7b851249c7ede4c5a88b9b93847205a111fb432bfb4938d0e896892621
 rtx-pro-6000-eks-ubuntu-inference-dynamo:
@@ -4626,7 +4626,7 @@ rtx-pro-6000-eks-ubuntu-inference-dynamo:
   012-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   012-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  012-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  012-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   013-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   013-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   013-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4668,7 +4668,7 @@ rtx-pro-6000-eks-ubuntu-inference-dynamo:
   README.md: ac33446caf201cfb58338204bf990302b7fae5e1fd8edaf631ca69b443463e57
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 6884ea0112d7334bd29889398e92ec15ea86889face52f402a1e3f543f29d9fa
-  checksums.txt: dcd645a5932d6b2ee25040fc8346c54e33be1ed678a1249b17c646f2afbf4445
+  checksums.txt: 4f51c632d71211553bb4cadca8bcfc913bf77ac44889c490235489ea83cd2a44
   deploy.sh: 49c666f9e07407c9616ce9f33a3bf89e9357f93dfc3f877e7eb136ddb717945e
   recipe.yaml: ce69dee159d6a352fd0a02fc18fa5378d02c0459b965d80bdc2f0057ec20842d
 rtx-pro-6000-eks-ubuntu-inference-nim:
@@ -4719,7 +4719,7 @@ rtx-pro-6000-eks-ubuntu-inference-nim:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  011-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4761,7 +4761,7 @@ rtx-pro-6000-eks-ubuntu-inference-nim:
   README.md: eb5853fea54394bdf80ef6a304d5863170dbcdd3e1465fc49dd1a12ceced6e05
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 423b1f377984b676cf8584d2268e6363121e51e0687037fd8f1b08291658c2c6
-  checksums.txt: 9ed80f04e07f238935fe43c7b656d938cc0b1b3d40b91724edb92fc3218f873a
+  checksums.txt: 4e01bc99aef350e1759751002424557053a2bf60fee9738264304e5d6d6590aa
   deploy.sh: 4aaee888f75718c1a573103f3897a59fa82074ff3dc8a23703bb81414b8cde08
   recipe.yaml: c504c7cbd6720e378dcf0d2657aa74d02c3c96af481aec084c7c142d0432e4f4
 rtx-pro-6000-eks-ubuntu-training-kubeflow:
@@ -4793,7 +4793,7 @@ rtx-pro-6000-eks-ubuntu-training-kubeflow:
   007-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   007-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  007-kube-prometheus-stack/values.yaml: ab1e0a90947634126cb96480377ecf6061acd01ee36e381a798d02a21dc031c9
+  007-kube-prometheus-stack/values.yaml: f9e34f70ac90efb320fb40edcd3a1f9de0fbaefdf2a81b6b0c769b5f1218990d
   008-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   008-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4840,7 +4840,7 @@ rtx-pro-6000-eks-ubuntu-training-kubeflow:
   README.md: b1d7e130a15bf263a5262be83a55cf452e8e638b39816c263a8d43b707ab3fcb
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: e1ea627366a426f26dda40f0348430750d4020e5693d85ed325588aec526062c
-  checksums.txt: de1896d03db3b17972e8278f005ad14243112c6ccd9da20da040c2a243997625
+  checksums.txt: 6268a595fbed2e8d47f7b392dce2904a4960040c85197658e4623f1899f56a6e
   deploy.sh: 868a046c7a49aab1e380fcee39202e83f56524350e6aca3c528d255bf94c2806
   recipe.yaml: f25df0f51da9b1b4a4b09bf383f9e8594813c750823f881a79b45faa25babcfc
 rtx-pro-6000-lke-ubuntu-inference:
@@ -4878,7 +4878,7 @@ rtx-pro-6000-lke-ubuntu-inference:
   008-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   008-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   008-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  008-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  008-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   009-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   009-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   009-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4916,7 +4916,7 @@ rtx-pro-6000-lke-ubuntu-inference:
   README.md: 141e5ea9bb34b7b14c773149d08a3506b1cfc11a1fe492e519a08a918d038570
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: cd372f4eb126b770bc9f2e4d7c19222830185991d7492055e2b04a522ded2e07
-  checksums.txt: e9c04a88f1e39ea725998b0cd29e0089fc55003836de5ce7d53ffd7e99d8ed22
+  checksums.txt: a2ad7945418d0f6bcdcea8f592cc7b0018f0a561b883e5fe33ea032b427c304a
   deploy.sh: c2db171d1e8dfa5467bd1c58135040776a36891d634b0a5b7140475f4338535b
   recipe.yaml: 14c3f7256276ef7820d66e00d94d013b748e9354750a4dc69e9a53867b6405ff
 rtx-pro-6000-lke-ubuntu-training-kubeflow:
@@ -4935,7 +4935,7 @@ rtx-pro-6000-lke-ubuntu-training-kubeflow:
   004-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   004-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   004-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  004-kube-prometheus-stack/values.yaml: 8a22565182dcb714e4952c3929b395b5b0612a0afc4ca01ce370df3397d90497
+  004-kube-prometheus-stack/values.yaml: aeee738b3859d56bef93f04c1949ee3413da6b6cdaad73ea0a7a14306d2b86f5
   005-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   005-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   005-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -4982,7 +4982,7 @@ rtx-pro-6000-lke-ubuntu-training-kubeflow:
   README.md: a35e2d2482f840c27000ee1047829fa5cb262eaf79a66bf1aa6faf3a66612762
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: 460b0005e40a336b3a0f0b4cf732dcdf3113c331940510f104a6b3792e531120
-  checksums.txt: 017958010e44591fe17f67c774ccd3e5d6e72554ef96599869bb53c536cfebb2
+  checksums.txt: 3c1337b62acf6f2c39051d776d176a60d4d32dd8616ec48a6ece30bb1d423a3f
   deploy.sh: 7eca8faa0e8439602ccdbb46fc0320fd82049474df39e604e5d025d5981b4ac3
   recipe.yaml: f3c880a639d8187b6c1ef74b1e5e7aac151a645653433aa50a20fa2b6edb00a7
 vr200-rke2-ubuntu-inference-dynamo:
@@ -5035,7 +5035,7 @@ vr200-rke2-ubuntu-inference-dynamo:
   011-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   011-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   011-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  011-kube-prometheus-stack/values.yaml: 122b439e5924baec0aef15d9e8353aef7d578de01566ac240e5ca77e7a5792da
+  011-kube-prometheus-stack/values.yaml: b37796349432014cd84d029fd355c7d7d1f240419f890d73bdcb924ee778c16f
   012-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   012-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   012-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -5077,7 +5077,7 @@ vr200-rke2-ubuntu-inference-dynamo:
   README.md: 430acb0f3f759e4aa65be678c8df432bc3675a964322481bfa00784a91f8baa5
   UPGRADING.md: e041428c87fbeb95b81ed706019c37d20f4049a92dd2fbe0aa5452425501f8fb
   bundle-info.yaml: 2f727b6ac9e858ed938c3a524b30e2c0ae350af7221f5714c440d0c64547b9ab
-  checksums.txt: 4727f89853eb734ada8f23ad298e6964725392806c707ef4663668813b7dd61e
+  checksums.txt: fffcea10a9be49f513f5b3cba2d0035fb0f039d2161109dd1eb0bf7999c8353f
   deploy.sh: 47ccd3111d186a4511e84e04df7c4438424aa00793b63b59cc3caf6a9803b7eb
   recipe.yaml: 18ce20cd60ef471cf82d617a7dbad1595db370aa4e99e6a60e4a40934d24a0c1
 vr200-rke2-ubuntu-training-kubeflow:
@@ -5106,7 +5106,7 @@ vr200-rke2-ubuntu-training-kubeflow:
   006-kube-prometheus-stack/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   006-kube-prometheus-stack/install.sh: b3575fdaa7b355db924a2cd2e8a18f82372979a4752fd89fa352a0a0f98837d6
   006-kube-prometheus-stack/upstream.env: 4cb3f21994a62e8c6f073fca04e2fa0361f9e2841932205321375af4c8ee638a
-  006-kube-prometheus-stack/values.yaml: 122b439e5924baec0aef15d9e8353aef7d578de01566ac240e5ca77e7a5792da
+  006-kube-prometheus-stack/values.yaml: b37796349432014cd84d029fd355c7d7d1f240419f890d73bdcb924ee778c16f
   007-k8s-ephemeral-storage-metrics/cluster-values.yaml: 49f560d440b0b58c4ec35c7f72fc187f23b94a69f5f7135482fa7070310bae26
   007-k8s-ephemeral-storage-metrics/install.sh: 727160f359e5476c7211551f781f1a857aedd834922ed255197f7059d78ea816
   007-k8s-ephemeral-storage-metrics/upstream.env: dbb5b7f8b156e8f1ad3ace176d3d1bef38280a533242107e49e0b76b24fbf435
@@ -5153,6 +5153,6 @@ vr200-rke2-ubuntu-training-kubeflow:
   README.md: e3baa49ebccb8cb4d38380f988f9344a7f23d29e0c5e828d0c1985413b1da462
   UPGRADING.md: 627350cdf2e92e31479be7cdbc4b3d93657d4dc6a722ab4823c2f692f6ba60f9
   bundle-info.yaml: a41b34df29c39b25f77a76724efa4d4f8239adb5d44ae4b40c379a3a0f9b7d83
-  checksums.txt: 8363d477ad8a7c1f0bb252b31b351414eb8b51c2901c1785d09634dd86ee4ce5
+  checksums.txt: 5a7927cf6c56b1362d1fd85c5a6b996ed69b2008278bd7584255d624fcb638de
   deploy.sh: 8aad016e8584415e5789618ef3f2912ca307ae43a23ca8e9299a2887f7499ab9
   recipe.yaml: c5efe07c318f8afe418f90b5087b297e3e8ea4f5f709dfb1926a64b56dda0e82

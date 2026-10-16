@@ -31,6 +31,10 @@ prometheus:
     # Discover ServiceMonitors across all namespaces (e.g., dcgm-exporter in nvidia-gpu-operator)
     serviceMonitorSelectorNilUsesHelmValues: false
     serviceMonitorNamespaceSelector: {}
+    # Same for PodMonitors (e.g., nfd-master in node-feature-discovery); the
+    # chart default selects only monitors labelled with the stack release name.
+    podMonitorSelectorNilUsesHelmValues: false
+    podMonitorNamespaceSelector: {}
 
     # Resource configuration
     resources:

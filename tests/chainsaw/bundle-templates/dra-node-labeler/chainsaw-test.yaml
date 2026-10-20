@@ -25,6 +25,8 @@ spec:
     test bundles an EKS H100 training recipe with and without
     --dra-eviction-node-label and checks that the labeler is present only when
     opted in, carries the configured pair, and is keyed on GFD hardware truth.
+    Its RBAC rules and binding, node affinity, and readiness marker are
+    compared as whole structures rather than grepped.
     Run with: AICR_BIN=$(pwd)/dist/e2e/aicr chainsaw test --no-cluster --test-dir tests/chainsaw/bundle-templates/dra-node-labeler
   timeouts:
     exec: 60s
@@ -93,10 +95,7 @@ spec:
                 || { echo "FAIL: labeler values key='${KEY}' value='${VAL}'" >&2; exit 1; }
               grep -q 'LABEL_KEY="example.com/dra-ready"' "${MANIFEST}" && grep -q 'LABEL_VALUE="enabled"' "${MANIFEST}" \
                 || { echo "FAIL: labeler script does not carry the configured pair" >&2; exit 1; }
-              # Hardware truth, not the accelerated node selector.
-              grep -q 'key: nvidia.com/gpu.present' "${MANIFEST}" \
-                || { echo "FAIL: labeler affinity is not keyed on nvidia.com/gpu.present" >&2; exit 1; }
-              # Accelerated tolerations are injected; a nodeSelector is not.
+              # Accelerated tolerations are injected.
               grep -q 'key: nvidia.com/gpu$' "${MANIFEST}" \
                 || { echo "FAIL: accelerated toleration not injected into the labeler" >&2; exit 1; }
               # Labeler sits after gpu-operator (GFD) and before the DRA driver in deployment order.
@@ -108,6 +107,48 @@ spec:
               case "${IMAGE}" in docker.io/alpine/kubectl:*@sha256:*) ;; *) echo "FAIL: image '${IMAGE}'" >&2; exit 1 ;; esac
               [ "$("${YQ}" e 'select(.kind == "DaemonSet") | .spec.updateStrategy.rollingUpdate.maxUnavailable' "${MANIFEST}")" = "100%" ] \
                 || { echo "FAIL: maxUnavailable != 100%" >&2; exit 1; }
+
+    - name: assert-security-surface
+      description: RBAC, placement and the readiness marker are compared as whole structures, so a widened verb, an extra binding subject, a moved affinity key or a drifted marker path fails.
+      try:
+        - script:
+            content: |
+              set -eu
+              YQ="${YQ:-yq}"
+              WORK="/tmp/chainsaw-bundle-dra-node-labeler-templates"
+              MANIFEST="$(ls -d "${WORK}"/bundle-labeled/*-dra-node-labeler)/templates/dra-node-labeler.yaml"
+              ds() { "${YQ}" ea -o=json -I=0 "[select(.kind == \"DaemonSet\")] | .[0].spec.template.spec | $1" "${MANIFEST}"; }
+
+              # One role, limited to reading and patching Node objects.
+              RULES="$("${YQ}" ea -o=json -I=0 '[select(.kind == "ClusterRole" or .kind == "Role")] | map(.rules)' "${MANIFEST}")"
+              [ "${RULES}" = '[[{"apiGroups":[""],"resources":["nodes"],"verbs":["get","list","patch"]}]]' ] \
+                || { echo "FAIL: labeler RBAC rules ${RULES}" >&2; exit 1; }
+              # One binding, granting that role to the labeler's own ServiceAccount only.
+              BINDINGS="$("${YQ}" ea -o=json -I=0 '[select(.kind == "ClusterRoleBinding" or .kind == "RoleBinding")]
+                | map([.roleRef.kind, .roleRef.name, (.subjects | map(.kind + "/" + .name))])' "${MANIFEST}")"
+              [ "${BINDINGS}" = '[["ClusterRole","dra-node-labeler",["ServiceAccount/dra-node-labeler"]]]' ] \
+                || { echo "FAIL: labeler RBAC bindings ${BINDINGS}" >&2; exit 1; }
+              [ "$(ds '.serviceAccountName')" = '"dra-node-labeler"' ] \
+                || { echo "FAIL: DaemonSet does not run as the bound ServiceAccount" >&2; exit 1; }
+
+              # Placement is hardware truth, so one required term on GFD's gpu.present and no nodeSelector.
+              TERMS="$(ds '.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms')"
+              [ "${TERMS}" = '[{"matchExpressions":[{"key":"nvidia.com/gpu.present","operator":"In","values":["true"]}]}]' ] \
+                || { echo "FAIL: labeler node affinity ${TERMS}" >&2; exit 1; }
+              [ "$(ds '.nodeSelector')" = "null" ] || { echo "FAIL: labeler carries a nodeSelector" >&2; exit 1; }
+
+              # Ready only once the script has touched the marker, which must sit on a writable
+              # emptyDir because the root filesystem is read-only.
+              MARKER_DIR=/var/run/dra-node-labeler
+              PROBE="$(ds '.containers[0].readinessProbe.exec.command')"
+              [ "${PROBE}" = "[\"test\",\"-f\",\"${MARKER_DIR}/labeled\"]" ] \
+                || { echo "FAIL: readiness probe ${PROBE}" >&2; exit 1; }
+              SCRIPT="$("${YQ}" ea '[select(.kind == "DaemonSet")] | .[0].spec.template.spec.containers[0].command[2]' "${MANIFEST}")"
+              printf '%s\n' "${SCRIPT}" | grep -Fxq "READY=${MARKER_DIR}/labeled" \
+                && printf '%s\n' "${SCRIPT}" | grep -Fxq 'touch "${READY}"' \
+                || { echo "FAIL: labeler script does not touch the probe's marker" >&2; exit 1; }
+              EMPTYDIR="$(MD="${MARKER_DIR}" ds '. as $s | [$s.containers[0].volumeMounts[] | select(.mountPath == strenv(MD)) | .name as $n | $s.volumes[] | select(.name == $n) | has("emptyDir")]')"
+              [ "${EMPTYDIR}" = "[true]" ] || { echo "FAIL: ${MARKER_DIR} is not one emptyDir mount (${EMPTYDIR})" >&2; exit 1; }
 
     - name: bundle-with-labeler-disabled
       description: The provisioning path stays available; disabling the labeler keeps the other two halves.

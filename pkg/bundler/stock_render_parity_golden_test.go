@@ -24,6 +24,7 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
+	"strings"
 	"testing"
 	"time"
 
@@ -61,9 +62,35 @@ const (
 	stockRenderBudget = 5 * time.Minute
 )
 
-// renderGolden maps each leaf overlay name to its rendered files: bundle
-// relative path to SHA-256 of the file's contents.
+// renderGolden maps each leaf overlay or opt-in fixture name to its rendered
+// files, keyed by bundle-relative path with the SHA-256 of the file's contents
+// as the value.
 type renderGolden map[string]map[string]string
+
+// stockRenderOptIn renders one leaf a second time with a bundle-time opt-in
+// applied. Its digests land in the golden under name, beside the leaf's
+// default-path entry.
+type stockRenderOptIn struct {
+	name string
+	leaf string
+	opts []config.Option
+	// covers names the opt-in component this fixture exists for. The fixture
+	// fails unless that component renders, so a catalog change that drops a
+	// prerequisite cannot turn it into a silent copy of the leaf.
+	covers string
+}
+
+// stockRenderOptIns lists the opt-in renders the golden digests. Stock leaves
+// pin only the default path, so a component gated behind a bundle flag
+// renders nothing in them and needs an entry here to be covered.
+var stockRenderOptIns = []stockRenderOptIn{
+	{
+		name:   "h100-eks-ubuntu-training-kubeflow+dra-eviction-node-label",
+		leaf:   "h100-eks-ubuntu-training-kubeflow",
+		opts:   []config.Option{config.WithDRAEvictionNodeLabel(config.DefaultDRAEvictionNodeLabel())},
+		covers: draNodeLabelerComponentName,
+	},
+}
 
 // TestStockRenderParityGolden pins the rendered bundle bytes of every leaf
 // recipe in the embedded catalog, one digest per rendered file.
@@ -81,6 +108,11 @@ type renderGolden map[string]map[string]string
 // path changing under every leaf that renders it, while a values change shows
 // up under the leaves that select that component (#2810). Paths keep their
 // install-order prefix because a reordering is a real bundle change.
+//
+// Stock leaves pin only the default render path. A component gated behind a
+// bundle-time flag, such as dra-node-labeler behind --dra-eviction-node-label,
+// renders nothing in any of them and is covered only through an entry in
+// stockRenderOptIns.
 //
 // Hermetic: the helm deployer emits values and manifests that reference the
 // upstream chart by coordinates. Chart bytes are only fetched on the
@@ -105,7 +137,8 @@ func TestStockRenderParityGolden(t *testing.T) {
 		t.Fatal("catalog resolved zero leaves; a golden over an empty set proves nothing")
 	}
 
-	got := make(renderGolden, len(leaves))
+	got := make(renderGolden, len(leaves)+len(stockRenderOptIns))
+	resolved := make(map[string]*recipe.RecipeResult, len(leaves))
 	for _, leaf := range leaves {
 		name := leaf.Entry.Name
 		if leaf.Err != nil {
@@ -114,6 +147,7 @@ func TestStockRenderParityGolden(t *testing.T) {
 			t.Errorf("leaf %q failed to resolve: %v", name, leaf.Err)
 			continue
 		}
+		resolved[name] = leaf.Result
 		files, renderErr := renderLeafFileDigests(ctx, t, leaf.Result)
 		if renderErr != nil {
 			t.Errorf("leaf %q failed to render: %v", name, renderErr)
@@ -121,6 +155,24 @@ func TestStockRenderParityGolden(t *testing.T) {
 			continue
 		}
 		got[name] = files
+	}
+
+	for _, fx := range stockRenderOptIns {
+		rr, ok := resolved[fx.leaf]
+		if !ok {
+			t.Errorf("opt-in fixture %q: leaf %q did not resolve (renamed or removed?)", fx.name, fx.leaf)
+			continue
+		}
+		files, renderErr := renderLeafFileDigests(ctx, t, rr, fx.opts...)
+		if renderErr != nil {
+			t.Errorf("opt-in fixture %q failed to render: %v", fx.name, renderErr)
+			got[fx.name] = renderErrorLeaf()
+			continue
+		}
+		if !rendersComponent(files, fx.covers) {
+			t.Errorf("opt-in fixture %q does not render %s, the component it exists to cover", fx.name, fx.covers)
+		}
+		got[fx.name] = files
 	}
 
 	if os.Getenv("AICR_UPDATE_GOLDEN") == "1" {
@@ -145,9 +197,9 @@ func TestStockRenderParityGolden(t *testing.T) {
 	for _, d := range diffRenderGolden(want, got) {
 		switch d.Kind {
 		case driftLeafAdded:
-			t.Errorf("leaf %q is not in the golden (new overlay?) — regenerate deliberately", d.Leaf)
+			t.Errorf("leaf %q is not in the golden (new overlay or opt-in fixture?). Regenerate deliberately.", d.Leaf)
 		case driftLeafRemoved:
-			t.Errorf("golden leaf %q is no longer produced (overlay removed?) — regenerate deliberately", d.Leaf)
+			t.Errorf("golden leaf %q is no longer produced (overlay or opt-in fixture removed?). Regenerate deliberately.", d.Leaf)
 		case driftRenderState:
 			state := "renderable"
 			if isRenderErrorLeaf(got[d.Leaf]) {
@@ -251,11 +303,12 @@ func isRenderErrorLeaf(files map[string]string) bool {
 // values, applied identically to every leaf. Several components' bundle
 // contracts require them, and supplying them is what lets the golden cover the
 // injection paths rather than only the components that need no input. Their
-// exact values are irrelevant; that they never vary is what matters.
-func renderLeafFileDigests(ctx context.Context, t *testing.T, rr *recipe.RecipeResult) (map[string]string, error) {
+// exact values are irrelevant. That they never vary is what matters. extra is
+// applied after them and carries an opt-in fixture's flags.
+func renderLeafFileDigests(ctx context.Context, t *testing.T, rr *recipe.RecipeResult, extra ...config.Option) (map[string]string, error) {
 	t.Helper()
 
-	cfg := config.NewConfig(
+	opts := []config.Option{
 		config.WithDeployer(config.DeployerHelm),
 		config.WithVersion(stockRenderVersion),
 		// Suppresses wall-clock timestamps and derives attestation
@@ -273,9 +326,9 @@ func renderLeafFileDigests(ctx context.Context, t *testing.T, rr *recipe.RecipeR
 		config.WithStorageClass("aicr-parity-rwo"),
 		config.WithSharedStorageClass("aicr-parity-rwx"),
 		config.WithEstimatedNodeCount(3),
-	)
+	}
 
-	b, err := New(WithConfig(cfg))
+	b, err := New(WithConfig(config.NewConfig(append(opts, extra...)...)))
 	if err != nil {
 		return nil, fmt.Errorf("new bundler: %w", err)
 	}
@@ -285,6 +338,18 @@ func renderLeafFileDigests(ctx context.Context, t *testing.T, rr *recipe.RecipeR
 		return nil, fmt.Errorf("make: %w", err)
 	}
 	return digestTreeFiles(outputDir)
+}
+
+// rendersComponent reports whether any rendered path sits under the
+// install-order directory of the named component ("NNN-<name>/").
+func rendersComponent(files map[string]string, name string) bool {
+	for p := range files {
+		dir, _, _ := strings.Cut(p, "/")
+		if _, component, ok := strings.Cut(dir, "-"); ok && component == name {
+			return true
+		}
+	}
+	return false
 }
 
 // digestTreeFiles hashes every file under root, keyed by slash-separated
@@ -331,10 +396,37 @@ func writeStockRenderGolden(t *testing.T, got renderGolden) {
 		"#\n" +
 		"# One entry per leaf overlay, mapping each file in its fully rendered\n" +
 		"# helm-deployer bundle tree (relative path, install-order prefix kept) to\n" +
-		"# the sha256 of that file's contents. A leaf that failed to render is\n" +
-		"# recorded as the single entry `render-error: render-error`.\n")
+		"# the sha256 of that file's contents. Entries named <leaf>+<opt-in> render\n" +
+		"# that leaf again with a bundle-time opt-in applied. A leaf that failed to\n" +
+		"# render is recorded as the single entry `render-error: render-error`.\n")
 	if err := os.WriteFile(stockRenderGoldenPath, append(header, raw...), 0o600); err != nil {
 		t.Fatalf("write golden: %v", err)
+	}
+}
+
+func TestRendersComponent(t *testing.T) {
+	files := map[string]string{
+		"014-nvidia-dra-driver-gpu/values.yaml": "aa",
+		"013-kubeflow-trainer-post/install.sh":  "bb",
+		"recipe.yaml":                           "cc",
+	}
+	tests := []struct {
+		name      string
+		component string
+		want      bool
+	}{
+		{"exact component directory", "nvidia-dra-driver-gpu", true},
+		{"post directory is its own component", "kubeflow-trainer-post", true},
+		{"prefix of a rendered name does not match", "nvidia-dra-driver", false},
+		{"parent of a post directory does not match", "kubeflow-trainer", false},
+		{"absent component", "dra-node-labeler", false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := rendersComponent(files, tt.component); got != tt.want {
+				t.Errorf("rendersComponent(%q) = %v, want %v", tt.component, got, tt.want)
+			}
+		})
 	}
 }
 

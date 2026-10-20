@@ -124,9 +124,12 @@ spec:
               [ "${RULES}" = '[[{"apiGroups":[""],"resources":["nodes"],"verbs":["get","list","patch"]}]]' ] \
                 || { echo "FAIL: labeler RBAC rules ${RULES}" >&2; exit 1; }
               # One binding, granting that role to the labeler's own ServiceAccount only.
+              DAEMONSET_NAMESPACE="$("${YQ}" ea '[select(.kind == "DaemonSet")] | .[0].metadata.namespace' "${MANIFEST}")"
+              [ -n "${DAEMONSET_NAMESPACE}" ] && [ "${DAEMONSET_NAMESPACE}" != "null" ] \
+                || { echo "FAIL: labeler DaemonSet has no namespace" >&2; exit 1; }
               BINDINGS="$("${YQ}" ea -o=json -I=0 '[select(.kind == "ClusterRoleBinding" or .kind == "RoleBinding")]
-                | map([.roleRef.kind, .roleRef.name, (.subjects | map(.kind + "/" + .name))])' "${MANIFEST}")"
-              [ "${BINDINGS}" = '[["ClusterRole","dra-node-labeler",["ServiceAccount/dra-node-labeler"]]]' ] \
+                | map([.kind, .roleRef.kind, .roleRef.name, (.subjects | map(.kind + "/" + (.namespace // "") + "/" + .name))])' "${MANIFEST}")"
+              [ "${BINDINGS}" = "[[\"ClusterRoleBinding\",\"ClusterRole\",\"dra-node-labeler\",[\"ServiceAccount/${DAEMONSET_NAMESPACE}/dra-node-labeler\"]]]" ] \
                 || { echo "FAIL: labeler RBAC bindings ${BINDINGS}" >&2; exit 1; }
               [ "$(ds '.serviceAccountName')" = '"dra-node-labeler"' ] \
                 || { echo "FAIL: DaemonSet does not run as the bound ServiceAccount" >&2; exit 1; }

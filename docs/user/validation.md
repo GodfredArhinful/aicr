@@ -302,7 +302,7 @@ probe pod's hostPath mount. If the preflight reads the kubelet's
 `hostPath type check failed` event and it is still the probe pod's latest
 event, it names that node as driver-absent instead of sending you to set the
 flag. Otherwise (the events cannot be read, none matches, or a later event
-shows the pod got past the mount) it returns the original wait timeout. There
+for the pod has superseded it) it returns the original wait timeout. There
 is no parameter to set until a driver is loaded. Finish the driver rollout (GPU
 Operator `nvidia-driver` DaemonSet Ready, or a node image that ships the driver
 on OKE `oci-managed`) and re-run. The kubelet leaves the pod in
